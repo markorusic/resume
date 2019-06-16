@@ -52,11 +52,9 @@ const App = () => (
       <Box size="1" />
       <Box size="5">
         <Section title="Skills">
-          <Div margin="10px 0 20px 0">
-            {content.skils.map(skill => (
-              <Card key={skill}>{skill}</Card>
-            ))}
-          </Div>
+          {content.skils.map(skill => (
+            <Card key={skill}>{skill}</Card>
+          ))}
         </Section>
         <Section title="Personal projects">
           {content.projects.map(project => (

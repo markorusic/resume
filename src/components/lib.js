@@ -69,22 +69,24 @@ export const SubTitle = styled.h4`
 `
 
 export const Section = ({ title, children, ...props }) => (
-  <div {...props}>
+  <Div margin="0 0 30px 0" {...props}>
     <Title>{title}</Title>
     <div>{children}</div>
-  </div>
+  </Div>
 )
 
 export const SectionItem = ({ url, children, ...props }) => (
-  <Flex {...props}>
-    <Div margin="0 10px 0 0" color="#487399">
-      -
-    </Div>
-    <Box>
-      {children}
-      {url && <Icon type="save" />}
-    </Box>
-  </Flex>
+  <Div margin="0 0 10px 0">
+    <Flex {...props}>
+      <Div margin="0 10px 0 0" color="#487399">
+        -
+      </Div>
+      <Box>
+        {children}
+        {url && <Icon type="save" />}
+      </Box>
+    </Flex>
+  </Div>
 )
 
 export const Italic = styled.span`
