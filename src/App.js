@@ -8,18 +8,18 @@ import { PageContainer, FlexContainer, Box, Section } from './components/lib'
 const App = () => (
   <PageContainer>
     <BasicInfo
-      name="Marko Rusić"
-      avatar="https://avatars1.githubusercontent.com/u/25515080?s=400&u=f7e97dcd06409a3037d1481d38631861e9709562&v=4"
-      title="Full Stack Developer"
-      description="Full Stack Developer with expertise in wide variety of fields. I am responsible, ambitious, analytical and well organized person. I’m very good in logical and problem solving tasks. I’m quick learner and constantly searching for new challenge."
+      name={content.name}
+      avatar={content.avatar}
+      title={content.title}
+      description={content.description}
     />
     <Links
-      email="markousp5@gmail.com"
-      address="Belgrade, Serbia"
-      phone="+381 60 4609090"
-      linkedin="https://linkedin.com/in/markorusic"
-      website="https://markorusic.github.io"
-      github="https://github.com/markorusic"
+      email={content.email}
+      address={content.address}
+      phone={content.phone}
+      linkedin={content.linkedin}
+      website={content.website}
+      github={content.github}
     />
     <FlexContainer>
       <Box size="5">
