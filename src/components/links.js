@@ -7,14 +7,14 @@ const LinkSpacer = styled.div`
   margin: 12px 0;
 `
 
-const Links = ({ email, address, phone, linkedin, website, github }) => (
+const Links = ({ email, location, phone, linkedin, website, github }) => (
   <FlexContainer bgColor="#dde0e14f">
     <Box size="6">
       <Icon type="envelope-o" title={email} />
       <LinkSpacer />
       <Icon type="mobile" title={phone} />
       <LinkSpacer />
-      <Icon type="map-marker" title={address} />
+      <Icon type="map-marker" title={location} />
       <LinkSpacer />
     </Box>
     <Box size="6">

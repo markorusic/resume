@@ -109,3 +109,13 @@ export const DateSpan = ({ time, location }) => (
     <Italic>{location}</Italic>
   </Flex>
 )
+
+export const Card = styled.span`
+  display: inline-block;
+  background-color: #487399;
+  border-radius: 5px;
+  padding: 5px 30px;
+  margin: 3px;
+  color: white;
+  font-size: 17px;
+`
