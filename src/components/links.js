@@ -1,24 +1,36 @@
-import { html, render } from 'lit-html'
+import React from 'react'
+import styled from 'styled-components'
+import { formatUrl } from '../utils'
+import { FlexContainer, Box, Icon, Link } from './lib'
 
-const links = ({ email }) =>
-  html`
-    <div class="links mt-5">
-      <!-- <div class="row">
-        <div class="col-2 flex-center-both">
-          <img
-            class="avatar"
-            src="https://avatars1.githubusercontent.com/u/25515080?s=400&u=f7e97dcd06409a3037d1481d38631861e9709562&v=4"
-          />
-        </div>
-        <div class="col-10">
-          <div class="px-4">
-            <h1 class="mb-0">${name}</h1>
-            <h3 class="title my-3">${title}</h3>
-            <p>${description}</p>
-          </div>
-        </div>
-      </div> -->
-    </div>
-  `
+const LinkSpacer = styled.div`
+  margin: 12px 0;
+`
 
-export default links
+const Links = ({ email, address, phone, linkedin, website, github }) => (
+  <FlexContainer bgColor="#dde0e14f">
+    <Box size="6">
+      <Icon type="envelope-o" title={email} />
+      <LinkSpacer />
+      <Icon type="mobile" title={phone} />
+      <LinkSpacer />
+      <Icon type="map-marker" title={address} />
+      <LinkSpacer />
+    </Box>
+    <Box size="6">
+      <Icon type="linkedin">
+        <Link href={linkedin}>{formatUrl(linkedin)}</Link>
+      </Icon>
+      <LinkSpacer />
+      <Icon type="github">
+        <Link href={github}>{formatUrl(github)}</Link>
+      </Icon>
+      <LinkSpacer />
+      <Icon type="globe">
+        <Link href={website}>{formatUrl(website)}</Link>
+      </Icon>
+    </Box>
+  </FlexContainer>
+)
+
+export default Links

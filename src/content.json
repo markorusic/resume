@@ -1,0 +1,74 @@
+{
+  "workExperience": [
+    {
+      "id": 1,
+      "position": "Full Stack Developer",
+      "company": "NetCast",
+      "location": "Belgrade, Serbia",
+      "description": "IT Company",
+      "time": "08/2017 – Present",
+      "achievements": [
+        {
+          "id": 1,
+          "content": "Architected and developed photo voting platform Slike Srbije using following technology stack: MySQL, Laravel, Vue.js",
+          "url": null
+        },
+        {
+          "id": 2,
+          "content": "Architected and developed TV content management service. Implemented complex electronic program guide (EPG) views and editors. Technology stack: MongoDB, Spring Boot, Vue.js",
+          "url": null
+        },
+        {
+          "id": 3,
+          "content": "Architected and developed end user TV content portal. Technology stack: Vue.js",
+          "url": null
+        },
+        {
+          "id": 4,
+          "content": "Architected and developed large scale back office portal for managing OTT platform. Technology stack: React",
+          "url": null
+        },
+        {
+          "id": 5,
+          "content": "Architected and developed end user TV streaming cross platform application. Technology stack: React, React Native",
+          "url": null
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "position": "Full Stack Developer",
+      "company": "NetCast",
+      "location": "Belgrade, Serbia",
+      "description": "IT Company",
+      "time": "08/2017 – Present",
+      "achievements": [
+        {
+          "id": 1,
+          "content": "Architected and developed photo voting platform Slike Srbije using following technology stack: MySQL, Laravel, Vue.js",
+          "url": null
+        },
+        {
+          "id": 2,
+          "content": "Architected and developed TV content management service. Implemented complex electronic program guide (EPG) views and editors. Technology stack: MongoDB, Spring Boot, Vue.js",
+          "url": null
+        },
+        {
+          "id": 3,
+          "content": "Architected and developed end user TV content portal. Technology stack: Vue.js",
+          "url": null
+        },
+        {
+          "id": 4,
+          "content": "Architected and developed large scale back office portal for managing OTT platform. Technology stack: React",
+          "url": null
+        },
+        {
+          "id": 5,
+          "content": "Architected and developed end user TV streaming cross platform application. Technology stack: React, React Native",
+          "url": null
+        }
+      ]
+    }
+  ]
+}
