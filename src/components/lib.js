@@ -14,22 +14,28 @@ export const Icon = ({
   color = '#000',
   className = '',
   style = {},
+  tag = 'span',
+  iconProps = {},
   children,
   ...props
-}) => (
-  <span>
-    <i
-      style={{ color, ...style }}
-      className={`
-        fa fa-${type}
-        ${size ? ' fa-' + size : ''}
-        ${className ? ' ' + className : ''}`}
-      aria-hidden="true"
-      {...props}
-    />
-    <span style={{ marginLeft: '10px' }}>{title || children}</span>
-  </span>
-)
+}) =>
+  React.createElement(tag, {
+    children: (
+      <>
+        <i
+          style={{ color, ...style }}
+          className={`
+          fa fa-${type}
+          ${size ? ' fa-' + size : ''}
+          ${className ? ' ' + className : ''}`.trim()}
+          aria-hidden="true"
+          {...iconProps}
+        />
+        <span style={{ marginLeft: '10px' }}>{title || children}</span>
+      </>
+    ),
+    ...props
+  })
 
 export const PageContainer = styled.div`
   padding-top: 3em;
@@ -83,7 +89,19 @@ export const SectionItem = ({ url, children, ...props }) => (
       </Div>
       <Box>
         {children}
-        {url && <Icon type="save" />}
+        {url && (
+          <Icon
+            tag="a"
+            type="external-link"
+            href={url}
+            target="_blank"
+            style={{
+              textDecoration: 'none',
+              marginLeft: '5px',
+              color: '#487399'
+            }}
+          />
+        )}
       </Box>
     </Flex>
   </Div>

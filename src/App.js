@@ -24,14 +24,7 @@ const App = () => (
       title={content.title}
       description={content.description}
     />
-    <Links
-      email={content.email}
-      location={content.location}
-      phone={content.phone}
-      linkedin={content.linkedin}
-      website={content.website}
-      github={content.github}
-    />
+    <Links links={content.links} />
     <FlexContainer>
       <Box size="5">
         <Section title="Work experience">

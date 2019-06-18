@@ -24,6 +24,41 @@
     "CSS3",
     "Bootstrap"
   ],
+  "links": [
+    {
+      "id": 1,
+      "icon": "envelope-o",
+      "text": "markousp5@gmail.com"
+    },
+    {
+      "id": 2,
+      "icon": "mobile",
+      "text": "+381 60 4609090"
+    },
+    {
+      "id": 3,
+      "icon": "map-marker",
+      "text": "Belgrade, Serbia"
+    },
+    {
+      "id": 4,
+      "icon": "linkedin",
+      "text": "linkedin.com/in/markorusic",
+      "url": "https://www.linkedin.com/in/markorusic/"
+    },
+    {
+      "id": 5,
+      "icon": "github",
+      "text": "github.com/markorusic",
+      "url": "https://github.com/markorusic"
+    },
+    {
+      "id": 6,
+      "icon": "globe",
+      "text": "markorusic.github.io/resume",
+      "url": "https://markorusic.github.io/resume/"
+    }
+  ],
   "workExperience": [
     {
       "id": 1,
@@ -36,27 +71,24 @@
         {
           "id": 1,
           "content": "Architected and developed photo voting platform Slike Srbije using following technology stack: MySQL, Laravel, Vue.js",
-          "url": null
+          "url": "https://www.slikesrbije.rs/"
         },
         {
           "id": 2,
-          "content": "Architected and developed TV content management service. Implemented complex electronic program guide (EPG) views and editors. Technology stack: MongoDB, Spring Boot, Vue.js",
-          "url": null
+          "content": "Architected and developed TV content management service. Implemented complex electronic program guide (EPG) views and editors. Technology stack: MongoDB, Spring Boot, Vue.js"
         },
         {
           "id": 3,
           "content": "Architected and developed end user TV content portal. Technology stack: Vue.js",
-          "url": null
+          "url": "http://volim.tv/"
         },
         {
           "id": 4,
-          "content": "Architected and developed large scale back office portal for managing OTT platform. Technology stack: React",
-          "url": null
+          "content": "Architected and developed large scale back office portal for managing OTT platform. Technology stack: React"
         },
         {
           "id": 5,
-          "content": "Architected and developed end user TV streaming cross platform application. Technology stack: React, React Native",
-          "url": null
+          "content": "Architected and developed end user TV streaming cross platform application. Technology stack: React, React Native"
         }
       ]
     }
@@ -82,13 +114,13 @@
       "id": 1,
       "name": "Dermaceutical (05/2018 – 06/2018)",
       "description": "E-commerce website with full fetured back office content management portal. Technology stack: Laravel, jQuery",
-      "url": null
+      "url": "https://dermaceutical.rs/"
     },
     {
       "id": 2,
       "name": "Belgrade Now Party (03/2018 – 04/2018)",
       "description": "Night life promotion website with full fetured back office content management portal. Technology stack: Laravel, jQuery",
-      "url": null
+      "url": "https://belgradenow.party/"
     }
   ],
   "competitions": [

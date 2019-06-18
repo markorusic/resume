@@ -1,35 +1,32 @@
 import React from 'react'
 import styled from 'styled-components'
-import { formatUrl } from '../utils'
+import { chunk } from '../utils'
 import { FlexContainer, Box, Icon, Link } from './lib'
 
 const LinkSpacer = styled.div`
   margin: 12px 0;
 `
 
-const Links = ({ email, location, phone, linkedin, website, github }) => (
-  <FlexContainer bgColor="#dde0e14f">
-    <Box size="6">
-      <Icon type="envelope-o" title={email} />
-      <LinkSpacer />
-      <Icon type="mobile" title={phone} />
-      <LinkSpacer />
-      <Icon type="map-marker" title={location} />
-      <LinkSpacer />
-    </Box>
-    <Box size="6">
-      <Icon type="linkedin">
-        <Link href={linkedin}>{formatUrl(linkedin)}</Link>
-      </Icon>
-      <LinkSpacer />
-      <Icon type="github">
-        <Link href={github}>{formatUrl(github)}</Link>
-      </Icon>
-      <LinkSpacer />
-      <Icon type="globe">
-        <Link href={website}>{formatUrl(website)}</Link>
-      </Icon>
-    </Box>
+const Links = ({ links, itemsPerRow = 3, ...props }) => (
+  <FlexContainer bgColor="#dde0e14f" {...props}>
+    {chunk(links, itemsPerRow).map((_links, i) => (
+      <Box key={i}>
+        {_links.map(link => (
+          <React.Fragment key={link.id}>
+            <Icon type={link.icon}>
+              {link.url ? (
+                <Link href={link.url} target="_blank">
+                  {link.text}
+                </Link>
+              ) : (
+                <>{link.text}</>
+              )}
+            </Icon>
+            <LinkSpacer />
+          </React.Fragment>
+        ))}
+      </Box>
+    ))}
   </FlexContainer>
 )
 
