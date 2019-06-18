@@ -56,7 +56,9 @@ const App = () => (
                 {value.projects.map(project => (
                   <Div key={project.id} margin="0 0 25px 0">
                     <Div>{project.name}</Div>
-                    <SectionItem>{project.description}</SectionItem>
+                    <SectionItem url={project.url}>
+                      {project.description}
+                    </SectionItem>
                   </Div>
                 ))}
               </Section>
