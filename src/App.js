@@ -2,6 +2,7 @@ import React from 'react'
 import BasicInfo from './components/basic-info'
 import Links from './components/links'
 import WorkExperience from './components/work-experience'
+import Fetch from 'components/fetch'
 import {
   PageContainer,
   FlexContainer,
@@ -14,7 +15,6 @@ import {
   Italic,
   Card
 } from './components/lib'
-import Fetch from 'components/fetch.js'
 
 const App = () => (
   <Fetch url="content.json">
