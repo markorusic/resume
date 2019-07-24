@@ -1,8 +1,8 @@
-import React from 'react'
-import BasicInfo from 'components/basic-info'
-import Links from 'components/links'
-import WorkExperience from 'components/work-experience'
-import Fetch from 'components/fetch'
+import React from "react";
+import BasicInfo from "components/basic-info";
+import Links from "components/links";
+import WorkExperience from "components/work-experience";
+import Fetch from "components/fetch";
 import {
   PageContainer,
   FlexContainer,
@@ -14,19 +14,7 @@ import {
   SubTitle,
   Italic,
   Card
-} from 'components/lib'
-// import html2canvas from 'html2canvas'
-// import jsPDF from 'jspdf'
-
-// window.pdf = () => {
-//   const input = document.getElementById('root')
-//   html2canvas(input).then(canvas => {
-//     const imgData = canvas.toDataURL('image/png')
-//     const pdf = new jsPDF()
-//     pdf.addImage(imgData, 'PNG', 0, 0)
-//     pdf.save('download.pdf')
-//   })
-// }
+} from "components/lib";
 
 const App = () => (
   <Fetch url="content.json">
@@ -88,6 +76,6 @@ const App = () => (
       )
     }
   </Fetch>
-)
+);
 
-export default App
+export default App;
