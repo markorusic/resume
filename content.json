@@ -84,10 +84,14 @@
         },
         {
           "id": 4,
-          "content": "Architected and developed large scale back office portal for managing OTT platform. Technology stack: React"
+          "content": "Created interactive command line interface for generating boilterplate pieces of code. Technology stack: Node JS"
         },
         {
           "id": 5,
+          "content": "Architected and developed large scale back office portal for managing OTT platform. Technology stack: React"
+        },
+        {
+          "id": 6,
           "content": "Architected and developed end user TV streaming cross platform application. Technology stack: React, React Native"
         }
       ]
