@@ -1,8 +1,8 @@
-import React from "react";
-import BasicInfo from "components/basic-info";
-import Links from "components/links";
-import WorkExperience from "components/work-experience";
-import Fetch from "components/fetch";
+import React from 'react'
+import BasicInfo from 'components/basic-info'
+import Links from 'components/links'
+import WorkExperience from 'components/work-experience'
+import Fetch from 'components/shared/fetch'
 import {
   PageContainer,
   FlexContainer,
@@ -14,7 +14,7 @@ import {
   SubTitle,
   Italic,
   Card
-} from "components/lib";
+} from 'components/lib'
 
 const App = () => (
   <Fetch url="content.json">
@@ -76,6 +76,6 @@ const App = () => (
       )
     }
   </Fetch>
-);
+)
 
-export default App;
+export default App

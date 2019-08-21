@@ -19,23 +19,22 @@ export const Icon = ({
   children,
   ...props
 }) =>
-  React.createElement(tag, {
-    children: (
-      <>
-        <i
-          style={{ color, ...style }}
-          className={`
-          fa fa-${type}
-          ${size ? ' fa-' + size : ''}
-          ${className ? ' ' + className : ''}`.trim()}
-          aria-hidden="true"
-          {...iconProps}
-        />
-        <span style={{ marginLeft: '10px' }}>{title || children}</span>
-      </>
-    ),
-    ...props
-  })
+  React.createElement(
+    tag,
+    props,
+    <>
+      <i
+        style={{ color, ...style }}
+        className={`
+    fa fa-${type}
+    ${size ? ' fa-' + size : ''}
+    ${className ? ' ' + className : ''}`.trim()}
+        aria-hidden="true"
+        {...iconProps}
+      />
+      <span style={{ marginLeft: '10px' }}>{title || children}</span>
+    </>
+  )
 
 export const PageContainer = styled.div`
   padding-top: 3em;
