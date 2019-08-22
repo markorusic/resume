@@ -49,8 +49,9 @@ export const PageContainer = styled.div`
 export const Container = styled.div`
   padding: 1em 2em;
   @page {
+    padding: 0.5em 1em;
     size: auto;
-    margin: 0mm;
+    margin: 0;
   }
 `
 
@@ -59,11 +60,6 @@ export const Flex = styled.div`
   flex-direction: ${props => props.direction};
   justify-content: ${props => props.justifyContent};
   align-items: ${props => props.alignItems};
-`
-
-export const MainContentContainer = styled(Flex)`
-  margin-top: 1em;
-  background-color: ${props => (props.bgColor ? props.bgColor : '#fff')};
 `
 
 export const Box = styled.div`

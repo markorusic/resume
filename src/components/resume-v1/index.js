@@ -5,7 +5,7 @@ import Links from './links'
 import WorkExperience from './work-experience'
 import {
   PageContainer,
-  MainContentContainer,
+  Flex,
   Container,
   Box,
   Section,
@@ -33,7 +33,7 @@ const ResumeV1 = () => (
           </Container>
           <Links links={value.links} />
           <Container>
-            <MainContentContainer justifyContent="space-between">
+            <Flex justifyContent="space-between">
               <Box size="5">
                 <Section title="Work experience">
                   {value.workExperience.map(experience => (
@@ -48,7 +48,9 @@ const ResumeV1 = () => (
                       printMargin="0 0 10px 0"
                     >
                       <SubTitle>{ed.name}</SubTitle>
-                      <Div>{ed.institution}</Div>
+                      <div>
+                        <PrintText fontSize="15px">{ed.institution}</PrintText>
+                      </div>
                       <DateSpan time={ed.time} location={ed.location} />
                     </Div>
                   ))}
@@ -91,7 +93,7 @@ const ResumeV1 = () => (
                   ))}
                 </Section>
               </Box>
-            </MainContentContainer>
+            </Flex>
           </Container>
         </PageContainer>
       )
