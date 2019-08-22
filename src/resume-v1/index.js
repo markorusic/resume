@@ -48,9 +48,9 @@ const ResumeV1 = () => (
                       printMargin="0 0 10px 0"
                     >
                       <SubTitle>{ed.name}</SubTitle>
-                      <div>
+                      <Div margin="0 0 5px 0" printMargin="0 0 2px 0">
                         <PrintText fontSize="15px">{ed.institution}</PrintText>
-                      </div>
+                      </Div>
                       <DateSpan time={ed.time} location={ed.location} />
                     </Div>
                   ))}

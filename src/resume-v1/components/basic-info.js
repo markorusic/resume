@@ -1,5 +1,12 @@
 import React from 'react'
+import styled from 'styled-components'
 import { Avatar, Flex, Box, PrintText, Div } from './lib'
+
+const DetailsContainer = styled(Box)`
+  @media print {
+    padding-left: 1em;
+  }
+`
 
 const BasicInfo = ({ name, avatar, title, description }) => (
   <Flex>
@@ -8,13 +15,13 @@ const BasicInfo = ({ name, avatar, title, description }) => (
         <Avatar alt={name + "'s avatar"} src={avatar} />
       </Box>
     )}
-    <Box size="10">
+    <DetailsContainer size="10">
       <h1>{name}</h1>
       <h3>{title}</h3>
       <Div margin="5px 0 0 0">
         <PrintText>{description}</PrintText>
       </Div>
-    </Box>
+    </DetailsContainer>
   </Flex>
 )
 

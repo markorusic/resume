@@ -72,19 +72,22 @@ export const Title = styled.h3`
   font-size: 20px;
   color: #487399;
   margin-bottom: 10px;
-`
-
-export const SubTitle = styled.h4`
-  font-size: 17px;
-  margin-bottom: 10px;
-  font-weight: bold;
   @media print {
     margin-bottom: 5px;
   }
 `
 
+export const SubTitle = styled.h4`
+  font-size: 17px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  @media print {
+    margin-bottom: 2px;
+  }
+`
+
 export const Section = ({ title, children, ...props }) => (
-  <Div margin="0 0 30px 0" printMargin="0 0 15px 0" {...props}>
+  <Div margin="0 0 30px 0" {...props}>
     <Title>{title}</Title>
     <div>{children}</div>
   </Div>

@@ -15,6 +15,9 @@ const LinksContainer = styled(Flex)`
   padding: 1em 2em;
   margin: 0;
   background-color: #dde0e14f;
+  @media print {
+    padding: 0.5em 2em;
+  }
 `
 
 const Links = ({ links, itemsPerRow = 3, ...props }) => (
