@@ -1,8 +1,8 @@
 import React from 'react'
-import Fetch from 'components/shared/fetch'
-import BasicInfo from './basic-info'
-import Links from './links'
-import WorkExperience from './work-experience'
+import Fetch from 'shared/components/fetch'
+import BasicInfo from './components/basic-info'
+import Links from './components/links'
+import WorkExperience from './components/work-experience'
 import {
   PageContainer,
   Flex,
@@ -16,7 +16,7 @@ import {
   Italic,
   TagCard,
   PrintText
-} from './lib'
+} from './components/lib'
 
 const ResumeV1 = () => (
   <Fetch url="content.json">

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { chunk } from 'utils'
+import { chunk } from 'shared/utils'
 import { Flex, Box, Icon, Link, PrintText } from './lib'
 
 const LinkSpacer = styled.div`

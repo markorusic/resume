@@ -1,5 +1,5 @@
 import React from 'react'
-import ResumeV1 from './components/resume-v1'
+import ResumeV1 from './resume-v1'
 
 const App = () => <ResumeV1 />
 
