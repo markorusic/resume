@@ -1,16 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export const Div = styled.div`
-  margin: ${props => (props.margin ? props.margin : '')};
-  padding: ${props => (props.padding ? props.padding : '')};
-  color: ${props => (props.color ? props.color : '#000')};
-  @media print {
-    margin: ${props => (props.printMargin ? props.printMargin : '')};
-    padding: ${props => (props.printPadding ? props.printPadding : '')};
-  }
-`
-
 export const Icon = ({
   type,
   size = '',
@@ -40,10 +30,24 @@ export const Icon = ({
     </>
   )
 
+export const Div = styled.div`
+  margin: ${props => (props.margin ? props.margin : '')};
+  padding: ${props => (props.padding ? props.padding : '')};
+  color: ${props => (props.color ? props.color : '#000')};
+  @media print {
+    margin: ${props => (props.printMargin ? props.printMargin : '')};
+    padding: ${props => (props.printPadding ? props.printPadding : '')};
+  }
+`
+
 export const PageContainer = styled.div`
   max-width: 1100px;
-  padding: 1em 2em;
   margin: 1em auto;
+  font-family: sans-serif;
+`
+
+export const Container = styled.div`
+  padding: 1em 2em;
   @page {
     size: auto;
     margin: 0mm;
@@ -57,7 +61,7 @@ export const Flex = styled.div`
   align-items: ${props => props.alignItems};
 `
 
-export const FlexContainer = styled(Flex)`
+export const MainContentContainer = styled(Flex)`
   margin-top: 1em;
   background-color: ${props => (props.bgColor ? props.bgColor : '#fff')};
 `
@@ -141,8 +145,8 @@ export const Link = styled.a`
 `
 
 export const Avatar = styled.img`
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 130px;
+  max-height: 130px;
   border-radius: 50%;
   @media print {
     max-width: 110px;
