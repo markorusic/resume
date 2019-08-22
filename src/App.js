@@ -1,3 +1,6 @@
-import Resume from './pages/resume'
+import React from 'react'
+import ResumeV1 from './components/resume-v1'
 
-export default Resume
+const App = () => <ResumeV1 />
+
+export default App
