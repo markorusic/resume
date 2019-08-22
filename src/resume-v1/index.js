@@ -34,7 +34,7 @@ const ResumeV1 = () => (
           <Links links={value.links} />
           <Container>
             <Flex justifyContent="space-between">
-              <Box size="5">
+              <Box size="6">
                 <Section title="Work experience">
                   {value.workExperience.map(experience => (
                     <WorkExperience key={experience.id} {...experience} />
