@@ -1,5 +1,5 @@
 import React from 'react'
-import { Avatar, Flex, Box } from './lib'
+import { Avatar, Flex, Box, PrintText, Div } from './lib'
 
 const BasicInfo = ({ name, avatar, title, description }) => (
   <Flex>
@@ -11,7 +11,9 @@ const BasicInfo = ({ name, avatar, title, description }) => (
     <Box size="10">
       <h1>{name}</h1>
       <h3>{title}</h3>
-      <p>{description}</p>
+      <Div margin="5px 0 0 0">
+        <PrintText>{description}</PrintText>
+      </Div>
     </Box>
   </Flex>
 )

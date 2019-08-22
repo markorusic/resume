@@ -13,7 +13,8 @@ import {
   DateSpan,
   SubTitle,
   Italic,
-  Card
+  TagCard,
+  PrintText
 } from 'components/lib'
 
 const App = () => (
@@ -28,16 +29,16 @@ const App = () => (
             description={value.description}
           />
           <Links links={value.links} />
-          <FlexContainer>
+          <FlexContainer justifyContent="space-between">
             <Box size="5">
               <Section title="Work experience">
-                {value.workExperience.map(we => (
-                  <WorkExperience key={we.id} {...we} />
+                {value.workExperience.map(experience => (
+                  <WorkExperience key={experience.id} {...experience} />
                 ))}
               </Section>
               <Section title="Education">
                 {value.education.map(ed => (
-                  <Div key={ed.id} margin="0 0 25px 0">
+                  <Div key={ed.id} margin="0 0 25px 0" printMargin="0 0 10px 0">
                     <SubTitle>{ed.name}</SubTitle>
                     <Div>{ed.institution}</Div>
                     <DateSpan time={ed.time} location={ed.location} />
@@ -49,23 +50,32 @@ const App = () => (
             <Box size="5">
               <Section title="Skills">
                 {value.skils.map(skill => (
-                  <Card key={skill}>{skill}</Card>
+                  <TagCard key={skill}>{skill}</TagCard>
                 ))}
               </Section>
               <Section title="Personal projects">
                 {value.projects.map(project => (
-                  <Div key={project.id} margin="0 0 25px 0">
-                    <Div>{project.name}</Div>
-                    <SectionItem url={project.url}>
-                      {project.description}
-                    </SectionItem>
+                  <Div
+                    key={project.id}
+                    margin="0 0 25px 0"
+                    printMargin="0 0 10px 0"
+                  >
+                    <PrintText fontSize="14px">{project.name}</PrintText>
+                    <SectionItem
+                      title={project.description}
+                      url={project.url}
+                    />
                   </Div>
                 ))}
               </Section>
               <Section title="Competitions">
                 {value.competitions.map(competition => (
-                  <Div key={competition.id} margin="0 0 25px 0">
-                    <Div>{competition.name}</Div>
+                  <Div
+                    key={competition.id}
+                    margin="0 0 25px 0"
+                    printMargin="0 0 10px 0"
+                  >
+                    <PrintText fontSize="14px">{competition.name}</PrintText>
                     <Italic>{competition.description}</Italic>
                   </Div>
                 ))}

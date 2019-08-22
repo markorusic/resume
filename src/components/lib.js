@@ -5,6 +5,10 @@ export const Div = styled.div`
   margin: ${props => (props.margin ? props.margin : '')};
   padding: ${props => (props.padding ? props.padding : '')};
   color: ${props => (props.color ? props.color : '#000')};
+  @media print {
+    margin: ${props => (props.printMargin ? props.printMargin : '')};
+    padding: ${props => (props.printPadding ? props.printPadding : '')};
+  }
 `
 
 export const Icon = ({
@@ -37,9 +41,13 @@ export const Icon = ({
   )
 
 export const PageContainer = styled.div`
-  padding-top: 3em;
-  margin: 0 auto;
   max-width: 1100px;
+  padding: 1em 2em;
+  margin: 1em auto;
+  @page {
+    size: auto;
+    margin: 0mm;
+  }
 `
 
 export const Flex = styled.div`
@@ -50,7 +58,6 @@ export const Flex = styled.div`
 `
 
 export const FlexContainer = styled(Flex)`
-  padding: 1em 2em;
   margin-top: 1em;
   background-color: ${props => (props.bgColor ? props.bgColor : '#fff')};
 `
@@ -71,23 +78,39 @@ export const SubTitle = styled.h4`
   font-size: 17px;
   margin-bottom: 10px;
   font-weight: bold;
+  @media print {
+    margin-bottom: 5px;
+  }
 `
 
 export const Section = ({ title, children, ...props }) => (
-  <Div margin="0 0 30px 0" {...props}>
+  <Div margin="0 0 30px 0" printMargin="0 0 15px 0" {...props}>
     <Title>{title}</Title>
     <div>{children}</div>
   </Div>
 )
 
-export const SectionItem = ({ url, children, ...props }) => (
-  <Div margin="0 0 10px 0">
+export const PrintText = styled.span`
+  @media print {
+    font-size: ${props => (props.fontSize ? props.fontSize : '12px')};
+    line-height: 0px !important;
+  }
+`
+const SectionItemContainer = styled.div`
+  margin-bottom: 10px;
+  @media print {
+    margin-bottom: 3px;
+  }
+`
+
+export const SectionItem = ({ title, url, children, ...props }) => (
+  <SectionItemContainer>
     <Flex {...props}>
       <Div margin="0 10px 0 0" color="#487399">
         -
       </Div>
       <Box>
-        {children}
+        {children ? children : <PrintText>{title}</PrintText>}
         {url && (
           <Icon
             tag="a"
@@ -103,13 +126,13 @@ export const SectionItem = ({ url, children, ...props }) => (
         )}
       </Box>
     </Flex>
-  </Div>
+  </SectionItemContainer>
 )
 
 export const Italic = styled.span`
   color: ${props => (props.color ? props.color : 'gray')};
   font-style: italic;
-  font-size: ${props => (props.fontSize ? props.fontSize : '13px')};
+  font-size: ${props => (props.fontSize ? props.fontSize : '12px')};
 `
 
 export const Link = styled.a`
@@ -121,6 +144,10 @@ export const Avatar = styled.img`
   max-width: 150px;
   max-height: 150px;
   border-radius: 50%;
+  @media print {
+    max-width: 110px;
+    max-height: 110px;
+  }
 `
 export const DateSpan = ({ time, location }) => (
   <Flex justifyContent="space-between">
@@ -129,7 +156,7 @@ export const DateSpan = ({ time, location }) => (
   </Flex>
 )
 
-export const Card = styled.span`
+export const TagCard = styled.span`
   display: inline-block;
   background-color: #487399;
   border-radius: 5px;
@@ -137,4 +164,9 @@ export const Card = styled.span`
   margin: 3px;
   color: white;
   font-size: 17px;
+  @media print {
+    padding: 5px 10px;
+    margin: 2px;
+    font-size: 12px;
+  }
 `
