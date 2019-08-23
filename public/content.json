@@ -70,29 +70,29 @@
       "achievements": [
         {
           "id": 1,
-          "content": "Architected and developed photo voting platform Slike Srbije using following technology stack: MySQL, Laravel, Vue.js",
+          "content": "Architected and developed photo voting platform Slike Srbije. Tech stack: MySQL, Laravel, Vue.js",
           "url": "https://www.slikesrbije.rs/"
         },
         {
           "id": 2,
-          "content": "Architected and developed TV content management service. Implemented complex electronic program guide (EPG) views and editors. Technology stack: MongoDB, Spring Boot, Vue.js"
+          "content": "Architected and developed TV content management service. Implemented complex electronic program guide (EPG) views and editors. Tech stack: MongoDB, Spring Boot, Vue.js"
         },
         {
           "id": 3,
-          "content": "Architected and developed end user TV content portal. Technology stack: Vue.js",
+          "content": "Architected and developed end user TV content portal. Tech stack: Vue.js",
           "url": "http://volim.tv/"
         },
         {
           "id": 4,
-          "content": "Created interactive command line interface for generating boilterplate pieces of code. Technology stack: Node JS"
+          "content": "Created interactive command line interface for generating boilterplate pieces of code. Tech stack: Node JS"
         },
         {
           "id": 5,
-          "content": "Architected and developed large scale back office portal for managing OTT platform. Technology stack: React"
+          "content": "Architected and developed large scale back-office portal for managing OTT platform. Tech stack: React"
         },
         {
           "id": 6,
-          "content": "Architected and developed end user TV streaming cross platform application. Technology stack: React, React Native"
+          "content": "Architected and developed end user TV streaming cross platform application. Tech stack: React, React Native"
         }
       ]
     }
@@ -117,13 +117,13 @@
     {
       "id": 1,
       "name": "Dermaceutical (05/2018 – 06/2018)",
-      "description": "E-commerce website with full fetured back office content management portal. Technology stack: Laravel, jQuery",
+      "description": "E-commerce website with full featured back-office content management portal. Tech stack: Laravel, jQuery",
       "url": "https://dermaceutical.rs/"
     },
     {
       "id": 2,
       "name": "Belgrade Now Party (03/2018 – 04/2018)",
-      "description": "Night life promotion website with full fetured back office content management portal. Technology stack: Laravel, jQuery",
+      "description": "Night life promotion website with full featured back-office content management portal. Tech stack: Laravel, jQuery",
       "url": "https://belgradenow.party/"
     }
   ],
@@ -131,22 +131,22 @@
     {
       "id": 1,
       "name": "Saga ML Hackathon (11/2018)",
-      "description": "Competition was organized by Saga company. Goal of competition was to apply IoT & Machine Learning to make human life easier."
+      "description": "Organized by Saga company. Goal of competition was to apply IoT & Machine Learning to make human life easier."
     },
     {
       "id": 2,
       "name": "Fon Case Study Hackaton (06/2018)",
-      "description": "Competition was organized by Faculty of Organizational Sciences and Government of Serbia. Main goal was to create better and easier way of paying taxes."
+      "description": "Organized by Faculty of Organizational Sciences and Government of Serbia. Goal was to create better and easier way of paying taxes."
     },
     {
       "id": 3,
       "name": "Mathackaton (05/2018)",
-      "description": "Competition was organized by Faculty of Mathematics. Main goal of hackathon was to implement data driven solution for generating trajectories."
+      "description": "Organized by Faculty of Mathematics. Goal was to implement data driven solution for generating trajectories."
     },
     {
       "id": 4,
       "name": "FON Hackathon (04/2018)",
-      "description": "Competition was organized by Faculty of Organizational Sciences and Telekom Serbia. Theme was to based around improving Serbia's biggest mobile provider business solutions, and bring better user experience."
+      "description": "Organized by Faculty of Organizational Sciences and Telekom Serbia. Goal was to improve business solutions, and bring better user experience to Serbia's largest telco provider."
     }
   ]
 }
