@@ -11,7 +11,7 @@ const LinksContainer = styled(Flex)`
 `
 
 const LinkItemContainer = styled.div`
-  margin: 6px 0;
+  margin: 10px 0;
   @media print {
     margin: 3px 0;
   }
