@@ -12,10 +12,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+  },
+  "reactSnap": {
+    "inlineCss": true
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,6 +43,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
     "gh-pages": "^2.1.1",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "react-snap": "^1.23.0"
   }
 }
