@@ -1,6 +1,5 @@
 import React from 'react'
 import { hydrate, render } from 'react-dom'
-// import './shared/index.css'
 import App from './App'
 
 const root = document.getElementById('root')
