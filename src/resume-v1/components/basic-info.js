@@ -8,6 +8,11 @@ const DetailsContainer = styled(Box)`
   }
 `
 
+const Title = styled.h3`
+  color: gray;
+  font-weight: normal;
+`
+
 const BasicInfo = ({ name, avatar, title, description }) => (
   <Flex>
     {avatar && (
@@ -17,7 +22,7 @@ const BasicInfo = ({ name, avatar, title, description }) => (
     )}
     <DetailsContainer size="10">
       <h1>{name}</h1>
-      <h3>{title}</h3>
+      <Title>{title}</Title>
       <Div margin="5px 0 0 0">
         <PrintText>{description}</PrintText>
       </Div>
