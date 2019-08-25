@@ -5,18 +5,15 @@ import { Flex, Box, Icon, Link, PrintText } from './lib'
 
 const LinksContainer = styled(Flex)`
   width: 100%;
-  padding: 1em 2em;
+  padding: 0.5em 2em;
   margin: 0;
   background-color: #dde0e14f;
-  @media print {
-    padding: 0.5em 2em;
-  }
 `
 
 const LinkItemContainer = styled.div`
-  margin: 8px 0;
+  margin: 6px 0;
   @media print {
-    margin: 5px 0;
+    margin: 3px 0;
   }
 `
 
