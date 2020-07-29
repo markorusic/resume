@@ -11,7 +11,6 @@ import {
   SectionItem,
   Div,
   DateSpan,
-  SubTitle,
   Italic,
   TagCard,
   PrintText
@@ -20,36 +19,39 @@ import {
 const ResumeV1 = ({ resume }) => (
   <PageContainer>
     <Container>
-      <BasicInfo
-        name={resume.name}
-        avatar={resume.avatar}
-        title={resume.title}
-        description={resume.description}
-      />
+      <BasicInfo {...resume}>
+        <Links links={resume.links} />
+      </BasicInfo>
     </Container>
-    <Links links={resume.links} />
     <Container>
       <Flex justifyContent="space-between">
         <Box size="6">
+          <Section title="About me">
+            {resume.bio.map(sentence => (
+              <Div key={sentence} margin="5px 0 0 0">
+                <PrintText>{sentence}</PrintText>
+              </Div>
+            ))}
+          </Section>
           <Section title="Work experience">
             {resume.workExperience.map(experience => (
               <WorkExperience key={experience.id} {...experience} />
             ))}
           </Section>
+        </Box>
+        <Box size="1" />
+        <Box size="5">
           <Section title="Education">
             {resume.education.map(ed => (
               <Div key={ed.id} margin="0 0 25px 0" printMargin="0 0 10px 0">
-                <SubTitle>{ed.name}</SubTitle>
+                <PrintText fontSize="15px">{ed.institution}</PrintText>
                 <Div margin="0 0 5px 0" printMargin="0 0 2px 0">
-                  <PrintText fontSize="15px">{ed.institution}</PrintText>
+                  <PrintText fontSize="14px">{ed.name}</PrintText>
                 </Div>
                 <DateSpan time={ed.time} location={ed.location} />
               </Div>
             ))}
           </Section>
-        </Box>
-        <Box size="1" />
-        <Box size="5">
           <Section title="Skills">
             {resume.skils.map(skill => (
               <TagCard key={skill}>{skill}</TagCard>

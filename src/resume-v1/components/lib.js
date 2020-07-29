@@ -87,7 +87,7 @@ export const SubTitle = styled.h4`
 `
 
 export const Section = ({ title, children, ...props }) => (
-  <Div margin="0 0 30px 0" {...props}>
+  <Div margin="0 0 20px 0" {...props}>
     <Title>{title}</Title>
     <div>{children}</div>
   </Div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Avatar, Flex, Box, PrintText, Div } from './lib'
+import { Avatar, Flex, Box } from './lib'
 
 const DetailsContainer = styled(Box)`
   @media print {
@@ -13,7 +13,7 @@ const Title = styled.h3`
   font-weight: normal;
 `
 
-const BasicInfo = ({ name, avatar, title, description }) => (
+const BasicInfo = ({ name, avatar, title, children }) => (
   <Flex>
     {avatar && (
       <Box size="2">
@@ -23,9 +23,7 @@ const BasicInfo = ({ name, avatar, title, description }) => (
     <DetailsContainer size="10">
       <h1>{name}</h1>
       <Title>{title}</Title>
-      <Div margin="5px 0 0 0">
-        <PrintText>{description}</PrintText>
-      </Div>
+      {children}
     </DetailsContainer>
   </Flex>
 )

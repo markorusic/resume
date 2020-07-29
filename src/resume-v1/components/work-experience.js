@@ -9,7 +9,7 @@ const WorkExperience = ({
   time,
   achievements = []
 }) => (
-  <Div margin="0 0 40px 0" printMargin="0 0 10px 0">
+  <Div margin="0 0 30px 0" printMargin="0 0 7px 0">
     <SubTitle>{position}</SubTitle>
     <Div margin="7px 0" printMargin="3px 0">
       <div>
