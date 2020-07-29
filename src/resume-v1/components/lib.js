@@ -70,7 +70,7 @@ export const Box = styled.div`
 export const Title = styled.h3`
   text-transform: uppercase;
   font-size: 20px;
-  color: #487399;
+  color: #000;
   margin-bottom: 10px;
   @media print {
     margin-bottom: 5px;
@@ -109,7 +109,7 @@ const SectionItemContainer = styled.div`
 export const SectionItem = ({ title, url, children, ...props }) => (
   <SectionItemContainer>
     <Flex {...props}>
-      <Div margin="0 10px 0 0" color="#487399">
+      <Div margin="0 10px 0 0" color="#000">
         -
       </Div>
       <Box>
@@ -123,7 +123,7 @@ export const SectionItem = ({ title, url, children, ...props }) => (
             style={{
               textDecoration: 'none',
               marginLeft: '5px',
-              color: '#487399'
+              color: '#000'
             }}
           />
         )}
@@ -161,15 +161,13 @@ export const DateSpan = ({ time, location }) => (
 
 export const TagCard = styled.span`
   display: inline-block;
-  background-color: #487399;
   border-radius: 5px;
   padding: 5px 30px;
   margin: 3px;
-  color: white;
   font-size: 17px;
+  color: #000;
+  border: 1px solid black;
   @media print {
-    color: #487399;
-    border: 1px solid black;
     padding: 5px 10px;
     margin: 2px;
     font-size: 12px;
