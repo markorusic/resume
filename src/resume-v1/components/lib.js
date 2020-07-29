@@ -168,6 +168,8 @@ export const TagCard = styled.span`
   color: white;
   font-size: 17px;
   @media print {
+    color: #487399;
+    border: 1px solid black;
     padding: 5px 10px;
     margin: 2px;
     font-size: 12px;

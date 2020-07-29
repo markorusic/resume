@@ -12,8 +12,9 @@ const WorkExperience = ({
   <Div margin="0 0 40px 0" printMargin="0 0 10px 0">
     <SubTitle>{position}</SubTitle>
     <Div margin="7px 0" printMargin="3px 0">
-      <div>{company}</div>
-      <Italic>{description}</Italic>
+      <div>
+        {company} {description && <Italic>({description})</Italic>}
+      </div>
     </Div>
     <Div margin="5px 0" printMargin="1px 0">
       <DateSpan time={time} location={location} />
