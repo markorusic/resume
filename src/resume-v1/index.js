@@ -57,7 +57,7 @@ const ResumeV1 = ({ resume }) => (
               <TagCard key={skill}>{skill}</TagCard>
             ))}
           </Section>
-          <Section title="Personal projects">
+          <Section title="Freelance projects">
             {resume.projects.map(project => (
               <Div
                 key={project.id}
