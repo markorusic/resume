@@ -5,6 +5,7 @@
     "plugin:prettier/recommended",
     "plugin:react/recommended"
   ],
+  
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module",
@@ -25,6 +26,9 @@
   },
   "rules": {
     "react/prop-types": "off",
-    "react/display-name": "off"
+    "react/display-name": "off",
+    "prettier/prettier": ["error", {      
+     "endOfLine":"auto"      
+   }]
   }
 }

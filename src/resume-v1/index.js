@@ -28,7 +28,7 @@ const ResumeV1 = ({ resume }) => (
         <Box size="6">
           <Section title="About me">
             {resume.bio.map(sentence => (
-              <Div key={sentence} margin="5px 0 0 0">
+              <Div key={sentence} margin="10px 0 0 0">
                 <PrintText>{sentence}</PrintText>
               </Div>
             ))}
