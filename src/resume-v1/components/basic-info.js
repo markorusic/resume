@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import { Avatar, Flex, Box } from './lib'
 
-const DetailsContainer = styled(Box)`
+const AvatarContainer = styled(Box)`
   @media print {
-    padding-left: 1em;
+    margin-right: 1em;
   }
 `
 
@@ -16,15 +16,15 @@ const Title = styled.h3`
 const BasicInfo = ({ name, avatar, title, children }) => (
   <Flex>
     {avatar && (
-      <Box size="2">
+      <AvatarContainer size="2">
         <Avatar alt={name + "'s avatar"} src={avatar} />
-      </Box>
+      </AvatarContainer>
     )}
-    <DetailsContainer size="10">
+    <Box size="10">
       <h1>{name}</h1>
       <Title>{title}</Title>
       {children}
-    </DetailsContainer>
+    </Box>
   </Flex>
 )
 
