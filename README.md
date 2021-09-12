@@ -1,3 +1,3 @@
 # Personal resume
 
-https://github.com/markorusic/resume/workflows/CI/CD/badge.svg
+![CI/CD](https://github.com/markorusic/resume/workflows/CI/CD/badge.svg)
