@@ -8,7 +8,7 @@ resume_tmp="$resume_dir_path/resume-data.tmp.json"
 file="$resume"
 
 if [ "$1" != "" ]; then
-	file=$1
+    file=$1
     cat "$resume" > "$resume_tmp"
     cat "$file" > "$resume"
 
