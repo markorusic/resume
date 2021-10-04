@@ -68,9 +68,9 @@ var e=Object.defineProperty,t=Object.getOwnPropertySymbols,n=Object.prototype.ha
 `,z=({time:e,location:t})=>c.createElement(h,{justifyContent:"space-between"},c.createElement(w,null,e),c.createElement(w,null,t)),T=l.span`
   display: inline-block;
   border-radius: 5px;
-  padding: 5px 30px;
+  padding: 5px 15px;
   margin: 3px;
-  font-size: 17px;
+  font-size: 15px;
   color: #000;
   border: 1px solid black;
   @media print {
