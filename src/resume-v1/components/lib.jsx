@@ -162,9 +162,9 @@ export const DateSpan = ({ time, location }) => (
 export const TagCard = styled.span`
   display: inline-block;
   border-radius: 5px;
-  padding: 5px 30px;
+  padding: 5px 15px;
   margin: 3px;
-  font-size: 17px;
+  font-size: 15px;
   color: #000;
   border: 1px solid black;
   @media print {
